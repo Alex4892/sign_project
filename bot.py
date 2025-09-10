@@ -5,7 +5,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, Con
 
 # === ВСТАВЬ СЮДА СВОИ ТОКЕНЫ ===
 TELEGRAM_TOKEN = '8470406400:AAEYFC27iCLVpg6CZNWeFrYesPu2U8i9k8s'
-HF_TOKEN = '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'
+HF_TOKEN = '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'
 
 # Hugging Face модель
 HF_API_URL = "https://api-inference.huggingface.co/models/google/flan-t5-base"
@@ -53,3 +53,4 @@ if __name__ == '__main__':
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
     print("Бот запущен.")
     app.run_polling()
+
